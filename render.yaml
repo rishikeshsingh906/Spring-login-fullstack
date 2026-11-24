@@ -1,0 +1,17 @@
+﻿services:
+  - type: web
+    name: spring-login-backend
+    runtime: java
+    rootDir: backend
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/*.jar
+    healthCheckPath: /api/auth/csrf
+    envVars:
+      - key: DB_URL
+        sync: false
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: FRONTEND_URL
+        sync: false

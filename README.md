@@ -1,4 +1,11 @@
-# Session Authentication — Full Stack
+﻿## Live Demo
+
+- **Frontend:** https://spring-login-fullstack.vercel.app
+- **Backend API:** https://BACKEND_URL
+- **Health check:** https://BACKEND_URL/api/auth/csrf
+
+> Note: Backend free tier par hai, isliye pehli request me 30-50 seconds lag sakte hain.
+# Session Authentication â€” Full Stack
 
 This package combines your existing Spring Boot session-authentication backend with a React + Vite frontend.
 
@@ -6,16 +13,16 @@ This package combines your existing Spring Boot session-authentication backend w
 
 ```text
 session-authentication-fullstack/
-├── backend/                 # Your original Spring Boot project
-│   ├── pom.xml
-│   ├── mvnw
-│   ├── mvnw.cmd
-│   └── src/
-├── frontend/                # React + Vite application
-│   ├── package.json
-│   ├── vite.config.js
-│   └── src/
-└── README.md
+â”œâ”€â”€ backend/                 # Your original Spring Boot project
+â”‚   â”œâ”€â”€ pom.xml
+â”‚   â”œâ”€â”€ mvnw
+â”‚   â”œâ”€â”€ mvnw.cmd
+â”‚   â””â”€â”€ src/
+â”œâ”€â”€ frontend/                # React + Vite application
+â”‚   â”œâ”€â”€ package.json
+â”‚   â”œâ”€â”€ vite.config.js
+â”‚   â””â”€â”€ src/
+â””â”€â”€ README.md
 ```
 
 ## Requirements
@@ -101,3 +108,4 @@ If you need a different backend URL, copy `frontend/.env.example` to `frontend/.
 - Signup creates the account; the user then signs in separately.
 - The backend requires the MySQL database and `DB_PASSWORD` environment variable to be configured before startup.
 - Dependencies are declared in `package.json`; run `npm install` on your machine to download them.
+
